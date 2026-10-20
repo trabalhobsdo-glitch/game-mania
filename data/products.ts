@@ -203,4 +203,44 @@ export const products: Product[] = [
       oplMenu,
     ],
   },
+
+  // ---------------------------------------------------------------- 7
+  {
+    id: 'ps2-fat-sem-fio',
+    slug: 'ps2-fat-opl-1-controle-sem-fio',
+    name: 'PlayStation 2 Fat OPL',
+    variant: '1 controle sem fio',
+    category: 'playstation',
+    condition: 'usado',
+    available: true, // TODO: EDITAR — confirme se há estoque
+    price: 210.5,
+    shortDescription: 'PlayStation 2 Fat com OPL e controle sem fio para jogar seus clássicos favoritos.',
+    description: [
+      'PlayStation 2 modelo Fat (o clássico, de gabinete maior) com OPL instalado e 1 controle sem fio, pronto para reviver os clássicos.',
+      'Aparelho usado: veja todas as fotos da galeria para conferir o estado real do console e dos acessórios.',
+    ],
+    features: ['PlayStation 2 modelo Fat (clássico)', 'OPL instalado', '1 controle sem fio', 'Produto usado'],
+    includes: [
+      'Console PlayStation 2 Fat com OPL',
+      '1 controle sem fio',
+      'HD externo com os jogos, cabo USB e cabo de vídeo (conforme fotos)', // TODO: EDITAR — confirme item a item
+      'Adaptador PS2 para HDMI (conforme fotos)', // TODO: EDITAR
+      'Cartão de memória de 8 MB (conforme fotos)', // TODO: EDITAR
+      // TODO: EDITAR — confirme se a fonte/cabo de energia e o item preto ao lado do controle (foto 1) acompanham.
+    ],
+    conditionNotes: [
+      'Produto usado, com marcas normais de uso.',
+      'As fotos da galeria mostram o aparelho e os acessórios.',
+      // TODO: EDITAR — descreva o que foi testado (leitura, controle, saídas) e qualquer detalhe de desgaste.
+      // TODO: EDITAR — o modelo da etiqueta (SCPH-50001) é 120V. Se ele não for bivolt, informe a tensão aqui
+      //   para o cliente saber se precisa de transformador em regiões 220V.
+    ],
+    images: [
+      img('ps2-fat-opl-1-controle-sem-fio', 1, 'PlayStation 2 Fat em pé com controle sem fio, HD externo, adaptador HDMI, cartão de memória e cabos à frente'),
+      img('ps2-fat-opl-1-controle-sem-fio', 2, 'Frente do PlayStation 2 Fat preto com entradas USB, de controle e de cartão de memória'),
+      img('ps2-fat-opl-1-controle-sem-fio', 3, 'PlayStation 2 Fat visto de cima, com o logo PS2 em azul'),
+      img('ps2-fat-opl-1-controle-sem-fio', 4, 'Traseira do PlayStation 2 Fat com etiqueta, ventilação e saídas de vídeo e áudio'),
+      oplMenu,
+    ],
+  },
 ];
