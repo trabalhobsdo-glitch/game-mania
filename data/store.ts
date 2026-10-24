@@ -22,8 +22,8 @@ export const store = {
   // ---------- Contatos (deixe vazio o que ainda não existir) ----------
   contact: {
     /** Somente números com DDI+DDD. Ex.: 5531999999999 */ // TODO: EDITAR
-    whatsapp: '',
-    whatsappMessage: 'Olá! Vim pela loja GAME MANIA e gostaria de ajuda.',
+    whatsapp: '5511967797148',
+    whatsappMessage: 'Olá, eu vim pelo site e queria tirar algumas dúvidas sobre os videogames.',
     /** URL completa. Ex.: https://instagram.com/sualoja */ // TODO: EDITAR
     instagram: '',
     /** Perfil do TikTok (URL completa). */
