@@ -1,9 +1,18 @@
+'use client';
+
+import { usePathname } from 'next/navigation';
 import { whatsappUrl } from '@/lib/format';
 
-/** Botão flutuante do WhatsApp (canto inferior direito). Some se não houver número em data/store.ts. */
+/**
+ * Botão flutuante do WhatsApp (canto inferior direito).
+ * Aparece só na página principal e nas páginas de produto.
+ * Some se não houver número em data/store.ts.
+ */
 export function WhatsAppButton() {
+  const pathname = usePathname();
   const wa = whatsappUrl();
-  if (!wa) return null;
+  const visivel = pathname === '/' || pathname.startsWith('/produto/');
+  if (!wa || !visivel) return null;
 
   return (
     <a
