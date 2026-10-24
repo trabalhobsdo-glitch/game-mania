@@ -11,6 +11,7 @@ import { CartDrawer } from '@/components/cart/CartDrawer';
 import { CartProvider } from '@/components/cart/CartProvider';
 import { Footer } from '@/components/layout/Footer';
 import { Header } from '@/components/layout/Header';
+import { WhatsAppButton } from '@/components/layout/WhatsAppButton';
 import { store } from '@/data/store';
 
 export const metadata: Metadata = {
@@ -61,6 +62,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </main>
           <Footer />
           <CartDrawer />
+          <WhatsAppButton />
         </CartProvider>
       </body>
     </html>
