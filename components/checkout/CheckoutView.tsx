@@ -19,6 +19,7 @@ import { preloadBeehive, tokenizeCard, TokenizeError } from '@/lib/payments/beeh
 import { submitCheckout } from '@/lib/payments/client';
 import type { CheckoutResult, PixPaymentData } from '@/lib/payments/types';
 import { getShippingOptions } from '@/lib/shipping';
+import { trackCompletePayment, trackInitiateCheckout } from '@/lib/tiktok';
 import { BR_STATES, validateFields, type CheckoutFields, type FieldErrors } from '@/lib/validation';
 
 const emptyFields: CheckoutFields = {
@@ -114,6 +115,14 @@ export function CheckoutView() {
     setFields((f) => ({ ...f, [key]: value }));
     if (errors[key]) setErrors((er) => ({ ...er, [key]: undefined }));
   };
+
+  // TikTok: início do checkout (uma vez, quando o carrinho já carregou)
+  const checkoutTracked = useRef(false);
+  useEffect(() => {
+    if (checkoutTracked.current || !hydrated || order.lines.length === 0) return;
+    checkoutTracked.current = true;
+    trackInitiateCheckout(order);
+  }, [hydrated, order]);
 
   // Reabre o Pix pendente se a página foi recarregada
   useEffect(() => {
@@ -213,6 +222,7 @@ export function CheckoutView() {
         return;
       }
       if (res.status === 'pix') savePix(res.pix);
+      if (res.status === 'paid') trackCompletePayment(res.transactionId, order);
       if (res.status === 'paid' || res.status === 'processing') {
         setCard(emptyCard);
         clear();
@@ -240,6 +250,7 @@ export function CheckoutView() {
       <PixPayment
         pix={result.pix}
         onPaid={(receiptUrl) => {
+          trackCompletePayment(result.pix.transactionId, order, result.pix.amount);
           clearPix();
           clear();
           setResult({ status: 'paid', transactionId: result.pix.transactionId, receiptUrl });
