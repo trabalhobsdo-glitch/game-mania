@@ -11,6 +11,7 @@ import { QuantityStepper } from '@/components/ui/QuantityStepper';
 import { checkoutConfig, enabledPaymentMethods } from '@/config/checkout';
 import { store } from '@/data/store';
 import { discountPercent, isOffer } from '@/lib/catalog';
+import { trackAddToCart, trackViewContent } from '@/lib/tiktok';
 import { brl } from '@/lib/format';
 import { cn } from '@/lib/cn';
 import type { Product } from '@/lib/types';
@@ -64,11 +65,18 @@ export function ProductPurchase({ product }: { product: Product }) {
     return () => clearTimeout(t);
   }, [added]);
 
+  // TikTok: visualização do produto
+  useEffect(() => {
+    trackViewContent(product);
+  }, [product]);
+
   const handleAdd = () => {
+    trackAddToCart(product, qty);
     addItem(product.slug, qty);
     setAdded(true);
   };
   const handleBuyNow = () => {
+    trackAddToCart(product, qty);
     setQuantity(product.slug, qty);
     router.push('/checkout');
   };
