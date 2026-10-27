@@ -243,4 +243,49 @@ export const products: Product[] = [
       oplMenu,
     ],
   },
+
+  // ---------------------------------------------------------------- 8
+  {
+    id: 'ps3-super-slim',
+    slug: 'ps3-super-slim-250-jogos',
+    name: 'PlayStation 3 Super Slim',
+    variant: 'HD com + de 250 jogos',
+    category: 'playstation',
+    condition: 'usado',
+    available: true, // TODO: EDITAR — confirme se há estoque
+    price: 299.9, // TODO: EDITAR — confirme o preço
+    shortDescription: 'PlayStation 3 Super Slim completo, com 2 controles e HD com mais de 250 jogos de PS3.',
+    description: [
+      'PlayStation 3 modelo Super Slim completo, com 2 controles sem fio e HD com mais de 250 jogos de PS3, pronto para jogar com um amigo.',
+      'Aparelho usado: veja todas as fotos da galeria para conferir o estado real do console e dos controles.',
+    ],
+    features: [
+      'PlayStation 3 modelo Super Slim',
+      'HD com mais de 250 jogos de PS3',
+      '2 controles sem fio',
+      'Produto usado',
+    ],
+    includes: [
+      'Console PlayStation 3 Super Slim',
+      '2 controles sem fio',
+      'HD com mais de 250 jogos de PS3',
+      'Cabos de energia e de vídeo', // TODO: EDITAR — as fotos não mostram os cabos; confirme o que acompanha
+      // TODO: EDITAR — informe a capacidade do HD (GB) se quiser destacar.
+    ],
+    conditionNotes: [
+      'Produto usado, com marcas normais de uso.',
+      'As fotos da galeria mostram o aparelho e os controles.',
+      // TODO: EDITAR — descreva o que foi testado (leitura, controles, saídas) e qualquer detalhe de desgaste.
+    ],
+    images: [
+      img('ps3-super-slim-250-jogos', 1, 'PlayStation 3 Super Slim preto em pé, com dois controles sem fio à frente'),
+      img('ps3-super-slim-250-jogos', 2, 'PlayStation 3 Super Slim preto deitado com dois controles sem fio sobre o console'),
+      img('ps3-super-slim-250-jogos', 3, 'PlayStation 3 Super Slim visto de frente, com dois controles sem fio em cima'),
+      {
+        src: '/images/produtos/ps3-super-slim-250-jogos/4.jpg',
+        alt: 'Arte Game Mania: PS3 com HD com mais de 250 jogos de PS3',
+        fit: 'contain' as const,
+      },
+    ],
+  },
 ];
