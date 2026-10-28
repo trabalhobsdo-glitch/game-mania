@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import type { ReactNode } from 'react';
 import { Check, PackageOpen, Star, TriangleAlert } from 'lucide-react';
 import { Accordion } from '@/components/ui/Accordion';
@@ -35,6 +36,18 @@ export function ProductDetails({ product }: { product: Product }) {
             <p key={p}>{p}</p>
           ))}
         </div>
+        {product.descriptionImage && (
+          <figure className="mt-8 max-w-xl overflow-hidden rounded-card border border-white/10 bg-white/[0.03]">
+            <Image
+              src={product.descriptionImage.src}
+              alt={product.descriptionImage.alt}
+              width={1024}
+              height={1536}
+              sizes="(min-width: 768px) 576px, 100vw"
+              className="h-auto w-full"
+            />
+          </figure>
+        )}
       </Block>
 
       <div className="grid gap-6 md:grid-cols-2">
