@@ -49,6 +49,8 @@ export interface Product {
   conditionNotes?: string[];
   importantInfo?: string[];
   images: ProductImage[];
+  /** Imagem larga exibida dentro da seção "Descrição" (ex.: banner do produto). */
+  descriptionImage?: ProductImage;
   /** Somente avaliações REAIS. Vazio = a loja mostra "Seja o primeiro a avaliar". */
   reviews?: Review[];
   faq?: FaqItem[];
