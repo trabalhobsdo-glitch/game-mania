@@ -32,6 +32,16 @@ const oplMenu = {
   fit: 'contain' as const,
 };
 
+/**
+ * Banner exibido na seção "Descrição" de todos os PlayStation 2.
+ * Para trocar: substitua public/images/ps2-banner.jpg
+ */
+const ps2Banner = {
+  src: '/images/ps2-banner.jpg',
+  alt: 'Banner do PlayStation 2: console com controles e HD com mais de 400 jogos de PS2',
+  fit: 'contain' as const,
+};
+
 export const products: Product[] = [
   // ---------------------------------------------------------------- 1
   {
@@ -92,6 +102,7 @@ export const products: Product[] = [
       'As fotos da galeria mostram o aparelho e os acessórios.',
       // TODO: EDITAR — descreva o que foi testado (leitura, controles, saídas) e qualquer detalhe de desgaste.
     ],
+    descriptionImage: ps2Banner,
     images: [
       img('ps2-opl-2-controles-sem-fio', 1, 'PlayStation 2 slim preto com dois controles sem fio ao lado'),
       img('ps2-opl-2-controles-sem-fio', 2, 'Frente do PlayStation 2 slim com cartão de memória inserido'),
@@ -164,6 +175,7 @@ export const products: Product[] = [
       'As fotos da galeria mostram o aparelho e o controle.',
       // TODO: EDITAR — descreva o que foi testado e qualquer detalhe de desgaste.
     ],
+    descriptionImage: ps2Banner,
     images: [
       img('ps2-opl-controle-original', 1, 'PlayStation 2 slim em pé com controle com fio original Sony à frente'),
       img('ps2-opl-controle-original', 2, 'Frente do PlayStation 2 slim preto'),
@@ -195,6 +207,7 @@ export const products: Product[] = [
       'As fotos da galeria mostram o aparelho.',
       // TODO: EDITAR — descreva o que foi testado e qualquer detalhe de desgaste.
     ],
+    descriptionImage: ps2Banner,
     images: [
       img('ps2-opl-2-controles-com-fio', 1, 'PlayStation 2 slim protegido por plástico, com controle com fio à frente'),
       img('ps2-opl-2-controles-com-fio', 2, 'PlayStation 2 slim em pé, protegido por plástico, com controle com fio ao lado'),
@@ -235,6 +248,7 @@ export const products: Product[] = [
       // TODO: EDITAR — o modelo da etiqueta (SCPH-50001) é 120V. Se ele não for bivolt, informe a tensão aqui
       //   para o cliente saber se precisa de transformador em regiões 220V.
     ],
+    descriptionImage: ps2Banner,
     images: [
       img('ps2-fat-opl-1-controle-sem-fio', 1, 'PlayStation 2 Fat em pé com controle sem fio, HD externo, adaptador HDMI, cartão de memória e cabos à frente'),
       img('ps2-fat-opl-1-controle-sem-fio', 2, 'Frente do PlayStation 2 Fat preto com entradas USB, de controle e de cartão de memória'),
