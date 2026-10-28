@@ -22,7 +22,16 @@ export function About() {
           </Link>
         </div>
         <div className="flex justify-center lg:justify-end">
-          <Image src="/logo.webp" alt={`${store.name} — ${store.tagline}`} width={665} height={595} sizes="(min-width: 1024px) 320px, 60vw" className="h-auto w-[68%] max-w-[320px] drop-shadow-[0_0_50px_rgb(var(--accent)/0.25)]" />
+          <div className="relative w-full max-w-[440px] overflow-hidden rounded-[1.25rem] border border-white/10 shadow-[0_0_50px_rgb(var(--accent)/0.25)]">
+            <Image
+              src="/images/loja-balcao.jpg"
+              alt={`Balcão da loja ${store.name} com o letreiro luminoso, vitrine de consoles e jogos`}
+              width={941}
+              height={1024}
+              sizes="(min-width: 1024px) 440px, 90vw"
+              className="h-auto w-full"
+            />
+          </div>
         </div>
       </div>
     </section>
