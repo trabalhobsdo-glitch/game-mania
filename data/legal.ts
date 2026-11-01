@@ -44,7 +44,7 @@ export const legalDocs: LegalDoc[] = [
       { title: 'Produtos usados', paragraphs: ['Produtos usados podem apresentar marcas de uso. O estado do produto é descrito na página de cada item e nas fotos da galeria.'] },
       { title: 'Preços e pagamento', paragraphs: ['Os preços estão em reais (R$) e podem ser alterados sem aviso prévio, sem afetar pedidos já confirmados. O pedido só é confirmado após a aprovação do pagamento.'] },
       { title: 'Entrega', paragraphs: ['Enviamos para todo o Brasil. Valor e prazo do frete são informados antes do pagamento e dependem do endereço de entrega.'] },
-      { title: 'Marcas de terceiros', paragraphs: ['PlayStation e demais marcas citadas pertencem aos seus respectivos proprietários. A loja é independente e não é afiliada a esses titulares.'] },
+      { title: 'Marcas de terceiros', paragraphs: ['PlayStation, Xbox e demais marcas citadas pertencem aos seus respectivos proprietários. A loja é independente e não é afiliada a esses titulares.'] },
       { title: 'Foro', paragraphs: ['Para questões de consumo, fica assegurado ao consumidor o foro de seu domicílio, conforme o Código de Defesa do Consumidor.'] },
     ],
   },
