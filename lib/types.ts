@@ -1,5 +1,5 @@
 export type Condition = 'novo' | 'usado';
-export type CategoryId = 'playstation' | 'game-stick';
+export type CategoryId = 'playstation' | 'xbox' | 'game-stick';
 
 export interface ProductImage {
   /** Caminho a partir de /public, ex.: /images/produtos/playstation-5/1.jpg */
