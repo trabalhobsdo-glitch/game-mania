@@ -302,4 +302,107 @@ export const products: Product[] = [
       },
     ],
   },
+
+  // ---------------------------------------------------------------- 9
+  {
+    id: 'xbox360-fat-rgh',
+    slug: 'xbox-360-fat-rgh-500gb',
+    name: 'Xbox 360 Fat RGH',
+    variant: 'HD 500GB',
+    category: 'xbox',
+    condition: 'usado', // TODO: EDITAR — confirme se é usado
+    available: true, // TODO: EDITAR — confirme se há estoque
+    price: 279.9,
+    shortDescription: 'Xbox 360 Fat desbloqueado (RGH) com HD de 500GB e controle.',
+    description: [
+      'Explore mundos incríveis e viva aventuras épicas com o Xbox 360! Este console oferece uma experiência de jogo imersiva com gráficos impressionantes e uma vasta biblioteca de títulos para todos os gostos.',
+      'Perfeito para colecionadores e entusiastas de games que buscam diversão sem limites.',
+      'Aparelho usado: veja todas as fotos da galeria para conferir o estado real do console e dos acessórios.',
+    ],
+    features: [
+      'Xbox 360 modelo Fat (clássico)',
+      'Desbloqueado (RGH)',
+      'HD de 500GB',
+      'Bivolt (110V/220V)',
+      'Produto usado', // TODO: EDITAR
+    ],
+    includes: [
+      'Console Xbox 360 Fat',
+      'HD de 500GB',
+      'Controle sem fio (conforme fotos)', // TODO: EDITAR — confirme item a item
+      'Fonte de energia bivolt (conforme fotos)', // TODO: EDITAR
+      // TODO: EDITAR — confirme se os cabos de vídeo/energia acompanham.
+    ],
+    conditionNotes: [
+      'Produto usado, com marcas normais de uso.',
+      'As fotos da galeria mostram o aparelho e os acessórios.',
+      'Aparelho bivolt: funciona em 110V e 220V, sem precisar de transformador.',
+      // TODO: EDITAR — descreva o que foi testado (leitura, controle, saídas) e qualquer detalhe de desgaste.
+    ],
+    images: [
+      img('xbox-360-fat-rgh-500gb', 1, 'Xbox 360 Fat branco deitado com controle sem fio e fonte de energia ao lado'),
+      img('xbox-360-fat-rgh-500gb', 2, 'Xbox 360 Fat branco em pé com controle sem fio e fonte de energia'),
+      img('xbox-360-fat-rgh-500gb', 3, 'Traseira do Xbox 360 Fat branco com etiqueta e saídas'),
+      img('xbox-360-fat-rgh-500gb', 4, 'Xbox 360 Fat branco visto por trás, com controle sem fio ao lado'),
+      {
+        src: '/images/produtos/xbox-360-fat-rgh-500gb/5.jpg',
+        alt: 'Menu do Xbox 360 na TV com a lista de jogos instalados no HD',
+        fit: 'contain' as const,
+      },
+    ],
+  },
+
+  // ---------------------------------------------------------------- 10
+  {
+    id: 'xbox360-slim-rgh-lt3',
+    slug: 'xbox-360-slim-rgh-lt3-500gb',
+    name: 'Xbox 360 Slim RGH 3.0 e LT3.0',
+    variant: 'HD 500GB',
+    category: 'xbox',
+    condition: 'usado',
+    available: true, // TODO: EDITAR — confirme se há estoque
+    price: 298.9,
+    shortDescription: 'Xbox 360 Slim desbloqueado com RGH 3.0 e LT3.0, HD de 500GB cheio de jogos e controle original.',
+    description: [
+      'Console Xbox 360 desbloqueado com RGH 3.0, que permite rodar qualquer jogo via HD. Possui também o LT3.0, que permite rodar qualquer jogo via CD.',
+      'O aparelho tem HD interno de 500GB com diversos títulos de Xbox 360 e Xbox clássico, além de um emulador de Super Nintendo com 1159 jogos.',
+      'O aparelho está impecável, em excelente estado de conservação: foi feita a limpeza interna e a troca da pasta térmica, e toda a carcaça foi higienizada. O controle também foi limpo e higienizado, com troca dos analógicos por novos.',
+    ],
+    features: [
+      'Xbox 360 modelo Slim',
+      'Desbloqueado com RGH 3.0 (roda jogos via HD)',
+      'LT3.0 (roda jogos via CD)',
+      'HD interno de 500GB com títulos de Xbox 360 e Xbox clássico',
+      'Emulador de Super Nintendo com 1159 jogos',
+      'Limpeza interna e troca da pasta térmica',
+      'Bivolt (110V/220V)',
+      'Produto usado',
+    ],
+    includes: [
+      'Xbox 360 Slim',
+      'HD de 500GB',
+      'Controle original Microsoft',
+      'Fonte original Microsoft (bivolt)',
+      'Caixa do aparelho',
+      'Cabos para ligação',
+    ],
+    conditionNotes: [
+      'Produto usado, em excelente estado de conservação.',
+      'Limpeza interna completa e troca da pasta térmica.',
+      'Carcaça e controle higienizados; analógicos do controle trocados por novos.',
+      'Aparelho bivolt: funciona em 110V e 220V, sem precisar de transformador.',
+    ],
+    images: [
+      img('xbox-360-slim-rgh-lt3-500gb', 1, 'Xbox 360 Slim preto com controle em cima, ao lado da caixa do aparelho'),
+      img('xbox-360-slim-rgh-lt3-500gb', 2, 'Xbox 360 Slim ligado em frente a uma TV com o menu de jogos, ao lado da caixa e do controle'),
+      img('xbox-360-slim-rgh-lt3-500gb', 3, 'Xbox 360 Slim com um jogo de corrida rodando na TV, ao lado da caixa e do controle'),
+      img('xbox-360-slim-rgh-lt3-500gb', 4, 'Controle original do Xbox 360 preto segurado na mão'),
+      img('xbox-360-slim-rgh-lt3-500gb', 5, 'Detalhe dos botões e dos analógicos do controle do Xbox 360'),
+      ...[6, 7, 8, 9, 10].map((n) => ({
+        src: `/images/produtos/xbox-360-slim-rgh-lt3-500gb/${n}.jpg`,
+        alt: 'Menu do Xbox 360 na TV com a lista de jogos instalados no HD',
+        fit: 'contain' as const,
+      })),
+    ],
+  },
 ];
