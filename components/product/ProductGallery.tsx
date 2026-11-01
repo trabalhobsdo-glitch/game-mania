@@ -47,7 +47,8 @@ export function ProductGallery({ product }: { product: Product }) {
     'absolute top-1/2 z-20 grid size-10 -translate-y-1/2 place-items-center rounded-full border border-white/15 bg-black/60 text-white backdrop-blur transition hover:border-accent hover:text-accent';
 
   return (
-    <div>
+    // min-w-0: impede que muitas miniaturas estiquem a coluna e alarguem a página no celular
+    <div className="min-w-0">
       <div
         role="button"
         tabIndex={0}
