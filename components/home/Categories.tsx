@@ -13,7 +13,11 @@ export function Categories() {
       <h2 id="categorias-title" className="sr-only">
         Categorias
       </h2>
-      <ul className={cn('grid gap-4', categories.length >= 4 ? 'sm:grid-cols-2 lg:grid-cols-4' : 'sm:grid-cols-2')}>
+      <ul className={cn('grid gap-4', categories.length >= 4
+            ? 'sm:grid-cols-2 lg:grid-cols-4'
+            : categories.length === 3
+              ? 'sm:grid-cols-2 lg:grid-cols-3'
+              : 'sm:grid-cols-2')}>
         {categories.map((cat, i) => {
           const list = products.filter(cat.match);
           const cover = (cat.coverSlug ? getProduct(cat.coverSlug) : list[0])?.images[0];
