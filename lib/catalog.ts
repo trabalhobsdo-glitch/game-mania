@@ -16,7 +16,7 @@ export const sortAvailableFirst = (list: Product[]) => [
   ...list.filter((p) => !p.available),
 ];
 
-export type CategorySlug = 'playstation' | 'game-stick' | 'ofertas' | 'mais-vendidos';
+export type CategorySlug = 'playstation' | 'xbox' | 'game-stick' | 'ofertas' | 'mais-vendidos';
 
 export interface Category {
   slug: CategorySlug;
@@ -36,6 +36,14 @@ export const allCategories: Category[] = [
     icon: 'gamepad',
     coverSlug: 'ps2-opl-2-controles-sem-fio',
     match: (p) => p.category === 'playstation',
+  },
+  {
+    slug: 'xbox',
+    label: 'Xbox',
+    description: 'Consoles Xbox 360 com HD cheio de jogos',
+    icon: 'gamepad',
+    coverSlug: 'xbox-360-slim-rgh-lt3-500gb',
+    match: (p) => p.category === 'xbox',
   },
   {
     slug: 'game-stick',
