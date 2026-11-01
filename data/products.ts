@@ -42,6 +42,12 @@ const ps2Banner = {
   fit: 'contain' as const,
 };
 
+/** Fotos do Xbox 360 Slim: aparecem inteiras (menores) dentro da moldura, sem corte. */
+const slim = (n: number, alt: string) => ({
+  ...img('xbox-360-slim-rgh-lt3-500gb', n, alt),
+  fit: 'contain' as const,
+});
+
 export const products: Product[] = [
   // ---------------------------------------------------------------- 1
   {
@@ -393,16 +399,16 @@ export const products: Product[] = [
       'Aparelho bivolt: funciona em 110V e 220V, sem precisar de transformador.',
     ],
     images: [
-      img('xbox-360-slim-rgh-lt3-500gb', 1, 'Xbox 360 Slim preto com controle em cima, ao lado da caixa do aparelho'),
-      img('xbox-360-slim-rgh-lt3-500gb', 2, 'Xbox 360 Slim ligado em frente a uma TV com o menu de jogos, ao lado da caixa e do controle'),
-      img('xbox-360-slim-rgh-lt3-500gb', 3, 'Xbox 360 Slim com um jogo de corrida rodando na TV, ao lado da caixa e do controle'),
-      img('xbox-360-slim-rgh-lt3-500gb', 4, 'Controle original do Xbox 360 preto segurado na mão'),
-      img('xbox-360-slim-rgh-lt3-500gb', 5, 'Detalhe dos botões e dos analógicos do controle do Xbox 360'),
-      ...[6, 7, 8, 9, 10].map((n) => ({
-        src: `/images/produtos/xbox-360-slim-rgh-lt3-500gb/${n}.jpg`,
-        alt: 'Menu do Xbox 360 na TV com a lista de jogos instalados no HD',
-        fit: 'contain' as const,
-      })),
+      slim(1, 'Xbox 360 Slim preto com controle em cima, ao lado da caixa do aparelho'),
+      slim(2, 'Xbox 360 Slim ligado em frente a uma TV com o menu de jogos, ao lado da caixa e do controle'),
+      slim(3, 'Xbox 360 Slim com um jogo de corrida rodando na TV, ao lado da caixa e do controle'),
+      slim(4, 'Controle original do Xbox 360 preto segurado na mão'),
+      slim(5, 'Detalhe dos botões e dos analógicos do controle do Xbox 360'),
+      slim(6, 'Menu do Xbox 360 na TV com a lista de jogos instalados no HD'),
+      slim(7, 'Menu do Xbox 360 na TV com a lista de jogos instalados no HD'),
+      slim(8, 'Menu do Xbox 360 na TV com a lista de jogos instalados no HD'),
+      slim(9, 'Menu do Xbox 360 na TV com a lista de jogos instalados no HD'),
+      slim(10, 'Menu do Xbox 360 na TV com a lista de jogos instalados no HD'),
     ],
   },
 ];
