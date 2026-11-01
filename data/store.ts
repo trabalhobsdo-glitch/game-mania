@@ -16,7 +16,7 @@ export const store = {
   seo: {
     title: 'Game Mania | Games, Consoles e Acessórios',
     description:
-      'Consoles, games e acessórios para você voltar a jogar seus clássicos favoritos. PlayStation, Game Stick e mais, com envio para todo o Brasil.',
+      'Consoles, games e acessórios para você voltar a jogar seus clássicos favoritos. PlayStation, Xbox, Game Stick e mais, com envio para todo o Brasil.',
   },
 
   // ---------- Contatos (deixe vazio o que ainda não existir) ----------
