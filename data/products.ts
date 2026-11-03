@@ -200,7 +200,7 @@ export const products: Product[] = [
     category: 'playstation',
     condition: 'usado',
     available: true,
-    price: 147.9, // TODO: EDITAR
+    price: 169.9, // TODO: EDITAR
     shortDescription: 'PlayStation 2 com OPL e 2 controles com fio para jogar com amigos.',
     description: [
       'PlayStation 2 modelo slim com OPL instalado e 2 controles com fio, ideal para jogar com amigos.',
