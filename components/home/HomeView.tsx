@@ -1,4 +1,5 @@
 import { About } from '@/components/home/About';
+import { BlackFridayBanner } from '@/components/home/BlackFridayBanner';
 import { FaqSection } from '@/components/home/FaqSection';
 import { Hero } from '@/components/home/Hero';
 import { OplBanner } from '@/components/home/OplBanner';
@@ -21,6 +22,7 @@ export function HomeView() {
   return (
     <>
       <Hero />
+      <BlackFridayBanner />
       <OplBanner />
       <Storefront />
       <Trust />
