@@ -43,6 +43,22 @@ export function Hero() {
           </h1>
           <span aria-hidden className="mt-6 block h-1 w-24 animate-rise rounded-full bg-accent shadow-[0_0_24px_rgb(var(--accent)/0.8)]" style={{ animationDelay: '260ms' }} />
 
+          {/* Banner Black Friday — logo abaixo do título. Imagem: public/images/banner-black-friday.jpg | Remover: apague este bloco */}
+          <Link
+            href="/categoria/playstation"
+            className="group mt-6 block animate-rise overflow-hidden rounded-card border border-white/10 bg-black transition duration-300 hover:border-accent/50 hover:shadow-card"
+            style={{ animationDelay: '300ms' }}
+          >
+            <Image
+              src="/images/banner-black-friday.jpg"
+              alt="Black Friday: confira os PlayStations disponíveis"
+              width={1672}
+              height={941}
+              sizes="(min-width: 1024px) 640px, 100vw"
+              className="h-auto w-full object-contain transition duration-700 group-hover:scale-[1.02]"
+            />
+          </Link>
+
           <p className="mt-6 max-w-md animate-rise text-lg leading-relaxed text-white/70" style={{ animationDelay: '320ms' }}>
             {hero.text}
           </p>
