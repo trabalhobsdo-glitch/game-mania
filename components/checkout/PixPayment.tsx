@@ -33,6 +33,21 @@ export function PixPayment({
 
   const canPoll = Boolean(pix.secureId);
 
+  // Ao abrir a tela do Pix, leva o cliente para o topo (título, QR Code e copia e cola),
+  // em vez de deixar a página lá embaixo onde estava o botão de finalizar.
+  useEffect(() => {
+    const toTop = () => window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
+    toTop();
+    const raf = requestAnimationFrame(toTop);
+    const t1 = setTimeout(toTop, 120);
+    const t2 = setTimeout(toTop, 400);
+    return () => {
+      cancelAnimationFrame(raf);
+      clearTimeout(t1);
+      clearTimeout(t2);
+    };
+  }, []);
+
   useEffect(() => {
     if (!canPoll) return;
     let stopped = false;
