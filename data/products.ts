@@ -411,4 +411,41 @@ export const products: Product[] = [
       slim(10, 'Menu do Xbox 360 na TV com a lista de jogos instalados no HD'),
     ],
   },
+
+  // ---------------------------------------------------------------- 11
+  {
+    id: 'kit-opl-hd-400',
+    slug: 'kit-opl-hd-400-jogos-ps2',
+    name: 'Kit OPL + HD',
+    variant: '400 jogos de PS2',
+    category: 'playstation',
+    condition: 'novo', // TODO: EDITAR — confirme se é novo
+    available: true,
+    price: 97,
+    shortDescription: 'HD externo com mais de 400 jogos de PS2 prontos para rodar via OPL, com cabo USB e cartão de memória.',
+    description: [
+      'Kit OPL com HD externo carregado com mais de 400 jogos de PlayStation 2, para você rodar seus clássicos direto do HD no seu PS2.',
+      'Acompanha cabo USB e cartão de memória de 64 MB para salvar seu progresso e iniciar o OPL.',
+    ],
+    features: [
+      'HD externo com mais de 400 jogos de PS2',
+      'Roda via OPL (Open PS2 Loader)',
+      'Cabo USB incluso',
+      'Cartão de memória de 64 MB incluso',
+    ],
+    includes: [
+      'HD externo com os jogos',
+      'Cabo USB',
+      'Cartão de memória de 64 MB',
+    ],
+    importantInfo: [
+      'Este kit não inclui o console PlayStation 2 nem controles.',
+      // TODO: EDITAR — informe a compatibilidade (modelos de PS2 aceitos) e o prazo de envio, se quiser.
+    ],
+    descriptionImage: ps2Banner,
+    images: [
+      img('kit-opl-hd-400-jogos-ps2', 1, 'Kit OPL com HD externo transparente de PS2, cabo USB e cartão de memória de 64 MB'),
+      oplMenu,
+    ],
+  },
 ];
