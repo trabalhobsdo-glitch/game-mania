@@ -9,7 +9,7 @@ import type { FaqItem, Product } from '@/lib/types';
 export const faq: FaqItem[] = [
   {
     q: 'Quais formas de pagamento estão disponíveis?',
-    a: 'Aceitamos Pix e cartão de crédito, processados com segurança pela Beehive Pay. As opções aparecem na etapa de pagamento do checkout.',
+    a: 'Aceitamos Pix e cartão de crédito, com a segurança Game Mania. As opções aparecem na etapa de pagamento do checkout.',
   },
   {
     q: 'Vocês enviam para todo o Brasil?',
