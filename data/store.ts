@@ -84,7 +84,7 @@ export const store = {
       {
         icon: 'card',
         title: 'Pagamento facilitado',
-        text: 'Pix ou cartão de crédito, processados com segurança pela Beehive Pay.',
+        text: 'Pix ou cartão de crédito, com a segurança Game Mania.',
       },
       {
         icon: 'gamepad',
