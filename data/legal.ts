@@ -57,7 +57,7 @@ export const legalDocs: LegalDoc[] = [
       { title: 'Como solicitar', paragraphs: [`Entre em contato ${contactLine}, informando o número do pedido e o motivo. Enviaremos as orientações para a devolução.`] },
       { title: 'Estado do produto na devolução', paragraphs: ['Para desistência, o produto deve ser devolvido com os acessórios recebidos. Produtos usados devem voltar no mesmo estado em que foram entregues.'] },
       { title: 'Defeitos', paragraphs: ['Se o produto apresentar defeito, fale conosco o quanto antes. Os prazos e direitos aplicáveis seguem o Código de Defesa do Consumidor e as condições de garantia informadas na página do produto.'] },
-      { title: 'Reembolso', paragraphs: ['O reembolso é feito pelo mesmo meio de pagamento usado na compra, respeitados os prazos da operadora ou instituição financeira.'] },
+      { title: 'Reembolso', paragraphs: ['O reembolso é feito pelo nosso WhatsApp, informando seu e-mail e nome completo, respeitados os prazos da operadora.'] },
     ],
   },
 ];
